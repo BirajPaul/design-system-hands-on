@@ -21,6 +21,7 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerFilter({
   name: "isTypography",
   matcher: function (prop) {
+    console.log(prop)
     return (
       [
         'fontSize',
@@ -54,6 +55,26 @@ StyleDictionary.registerFilter({
   },
 });
 
+/* Basic filter to separate radius tokens. */
+StyleDictionary.registerFilter({
+  name: "isRadii",
+  matcher: function (prop) {
+    return (
+      prop.path[0] === "radii"
+    );
+  },
+});
+
+/* Basic filter to separate shadow tokens. */
+StyleDictionary.registerFilter({
+  name: "isShadow",
+  matcher: function (prop) {
+    return (
+      prop.path[0] === "shadow"
+    );
+  },
+});
+
 module.exports = {
   source: ["./src/tokens/design-tokens.json"],
   platforms: {
@@ -82,6 +103,18 @@ module.exports = {
           destination: "spacing.js",
           format: "javascript/es6",
           filter: "isSpacing",
+        },
+        /* Filter and extract radii tokens*/
+        {
+          destination: "radii.js",
+          format: "javascript/es6",
+          filter: "isRadii",
+        },
+        /* Filter and extract shadow tokens*/
+        {
+          destination: "shadow.js",
+          format: "javascript/es6",
+          filter: "isShadow",
         },
       ],
     },
