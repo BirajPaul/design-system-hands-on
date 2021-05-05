@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { radii } from '../../tokens';
 
 /* Avatar
  *
@@ -12,7 +13,7 @@ const Avatar = ({ src, ...props }) => {
 export const StyledAvatar = styled.img`
 	width: 48px;
 	height: 48px;
-	border-radius: 16px;
+	border-radius: ${radii.radii16Radius};
 `;
 
 export default Avatar;
