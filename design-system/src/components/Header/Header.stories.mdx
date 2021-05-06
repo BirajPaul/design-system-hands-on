@@ -1,0 +1,43 @@
+
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+
+import { icons } from "../Icon";
+
+import cat1 from "./cat1.png";
+import cat2 from "./cat2.png";
+import cat3 from "./cat3.png";
+import cat4 from "./cat4.png";
+
+import Header from ".";
+
+<Meta title="Components/Header" />
+
+## Header
+
+TODO: add component description
+
+export const images = [
+  { source: cat1 },
+  { source: cat2 },
+  { source: cat3 },
+  { source: cat4 },
+];
+
+<Preview>
+  <Story
+    name="Header"
+    argTypes={{
+      leftIcon: { control: { type: "select", options: Object.keys(icons) } },
+      rightIcon: { control: { type: "select", options: Object.keys(icons) } },
+      topBarTitle: { control: { type: "text" } },
+      title: { control: { type: "text" } },
+    }}
+    args={{ leftIcon: "settings" }}
+  >
+    {({ leftIcon, ...args }) => {
+      return (
+        <Header carouselImages={images} leftIcon={leftIcon} {...args} />
+      );
+    }}
+  </Story>
+</Preview>

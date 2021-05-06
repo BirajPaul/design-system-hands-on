@@ -1,0 +1,30 @@
+
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { colors as themeColors } from "../../tokens";
+import { icons } from "../Icon";
+
+import TopBar from ".";
+
+<Meta title="Components/TopBar" />
+
+## TopBar
+
+TODO: add component description
+
+<Preview>
+  <Story
+    name="TopBar"
+    argTypes={{
+      leftIcon: { control: { type: "select", options: Object.keys(icons) } },
+      rightIcon: { control: { type: "select", options: Object.keys(icons) } },
+      title: { control: { type: "text" } },
+    }}
+    args={{ leftIcon: "settings" }}
+  >
+    {({ leftIcon, ...args }) => {
+      return (
+        <TopBar leftIcon={leftIcon} {...args} />
+      );
+    }}
+  </Story>
+</Preview>
