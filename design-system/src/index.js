@@ -12,4 +12,4 @@ export { default as ProductImage } from './components/ProductImage';
 export { default as Select } from './components/Select';
 export { default as SummaryTable } from './components/SummaryTable';
 export { default as GlobalStyle } from './global.js';
-export { colors, spacing, typography } from './tokens';
+export { colors, radii, shadow, spacing, typography } from './tokens';
