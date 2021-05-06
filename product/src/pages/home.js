@@ -105,10 +105,4 @@ const StyledButton = styled(Button)`
 	}
 `;
 
-const StyledP = styled.p`
-	color: ${colors.primaryOrange100};
-	font-weight: 700;
-	margin-top: 8px;
-`;
-
 export default Home;
