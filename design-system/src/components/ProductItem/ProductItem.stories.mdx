@@ -1,0 +1,33 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+
+import ProductItem from '.';
+
+<Meta
+	title='Components/ProductItem'
+	parameters={{
+		viewport: {
+			defaultViewport: 'mobile1',
+		},
+	}}
+/>
+
+## ProductItem
+
+TODO: add component description
+
+export const productArgs = {
+	id: 'item1',
+	item: {
+		name: "Nike Air Force 1 '07",
+		price: '€95.00',
+		category: 'Men’s Shoe',
+		description: 'Men’s Shoe, Black',
+		image: '/sampleImages/brian-stalter-G02vZvljukE-unsplash.jpg',
+	},
+};
+
+<Canvas>
+	<Story name='Default' args={productArgs}>
+		{(args) => <ProductItem {...args} />}
+	</Story>
+</Canvas>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { radii } from '../../tokens';
 
 /* ProductImage
  *
@@ -12,6 +13,7 @@ const ProductImage = ({ src, ...props }) => {
 export const StyledProductImage = styled.img`
 	max-width: 100%;
 	object-fit: cover;
+	border-radius: ${radii.radii16Radius};
 `;
 
 export default ProductImage;

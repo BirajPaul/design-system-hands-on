@@ -4,12 +4,15 @@
  * Don't edit it directly, your chages will be overwritten.
  */
 
-export { default as Avatar } from './components/Avatar';
-export { default as Button } from './components/Button';
-export { default as Carousel } from './components/Carousel';
-export { default as Icon } from './components/Icon';
-export { default as ProductImage } from './components/ProductImage';
-export { default as Select } from './components/Select';
-export { default as SummaryTable } from './components/SummaryTable';
-export { default as GlobalStyle } from './global.js';
-export { colors, radii, shadow, spacing, typography } from './tokens';
+export { default as GlobalStyle } from "./global.js";
+export { colors, typography, spacing, radii, shadow } from "./tokens";
+
+
+export { default as Avatar } from "./components/Avatar";
+export { default as Button } from "./components/Button";
+export { default as Carousel } from "./components/Carousel";
+export { default as Icon } from "./components/Icon";
+export { default as ProductImage } from "./components/ProductImage";
+export { default as ProductItem } from "./components/ProductItem";
+export { default as Select } from "./components/Select";
+export { default as SummaryTable } from "./components/SummaryTable";
