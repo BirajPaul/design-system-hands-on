@@ -10,7 +10,7 @@ import ProductImage from '../ProductImage';
 const ProductItem = ({ id, item, ...props }) => {
 	return (
 		<StyledProductItem>
-			<ProductImage src={item.image} />
+			<StyledImage src={item.image} />
 			<h4>{item.name}</h4>
 			<StyledP>{item.price}</StyledP>
 		</StyledProductItem>
@@ -24,8 +24,12 @@ export const StyledProductItem = styled.div`
 	color: inherit;
 `;
 
+const StyledImage = styled(ProductImage)`
+	margin-bottom: ${spacing.spacingLgBottom};
+`;
+
 const StyledP = styled.p`
-	color: ${colors.primary700};
+	color: ${colors.secondary500};
 	font-weight: ${typography.paragraph1FontWeight};
 	margin-top: ${spacing.spacingBaseTop};
 `;
