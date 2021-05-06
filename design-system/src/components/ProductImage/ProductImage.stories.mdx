@@ -1,0 +1,28 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+
+import ProductImage from '.';
+
+<Meta title='Components/ProductImage' />
+
+## ProductImage
+
+Image displaying a product
+
+<Preview>
+	<Story
+		name='Default'
+		args={{
+			src: '/sampleImages/cristina-matos-albers-Ltv7a5m8i4c-unsplash.jpg',
+		}}>
+		{(args) => <ProductImage {...args} />}
+	</Story>
+	<Story
+		name='Size'
+		args={{
+			src: '/sampleImages/natallia-nagorniak-pWzyitSeNyM-unsplash.jpg',
+			width: 295,
+			height: 295,
+		}}>
+		{(args) => <ProductImage {...args} />}
+	</Story>
+</Preview>

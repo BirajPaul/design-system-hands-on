@@ -13,6 +13,8 @@ export { default as Button } from "./components/Button";
 export { default as Carousel } from "./components/Carousel";
 export { default as Header } from "./components/Header";
 export { default as Icon } from "./components/Icon";
+export { default as ProductImage } from "./components/ProductImage";
+export { default as ProductItem } from "./components/ProductItem";
 export { default as Select } from "./components/Select";
 export { default as SummaryTable } from "./components/SummaryTable";
 export { default as TopBar } from "./components/TopBar";
