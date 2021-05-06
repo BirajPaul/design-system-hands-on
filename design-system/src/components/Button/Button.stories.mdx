@@ -20,7 +20,7 @@ types of the buttons are coded as different components and imported here.
 				type: 'figma',
 				// replace this url with your own design file to link:
 				url:
-					'https://www.figma.com/file/GDxXj0FoQ2ppNCAMcPZpmV/Workshop-starter-template?node-id=113%3A3473',
+					'https://www.figma.com/file/FWi16PjbdbwImMWDnoFzrI/Brand-B?node-id=113%3A3473',
 			}),
 		}}
 		// Props values for the story
@@ -44,7 +44,7 @@ types of the buttons are coded as different components and imported here.
 		argTypes={{
 			color: { control: { type: 'select', options: Object.keys(themeColors) } },
 		}}
-		args={{ label: 'Button', color: 'secondary500' }}>
+		args={{ label: 'Button', color: 'primary500' }}>
 		{({ color, ...args }) => {
 			// Resolve color rgb value from color name, which we receive from select control
 			const colorValue = themeColors[color];
