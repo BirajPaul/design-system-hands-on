@@ -114,7 +114,7 @@
       "type": "color"
     }
   },
-  "on background": {
+  "on-background": {
     "500": {
       "category": "fill",
       "value": "rgba(12, 17, 24, 1)",
@@ -225,7 +225,7 @@
       "type": "color"
     }
   },
-  "on surface": {
+  "on-surface": {
     "50": {
       "category": "fill",
       "value": "rgba(255, 255, 255, 1)",
@@ -277,7 +277,24 @@
       "type": "color"
     }
   },
-  "headline 1": {
+  "status": {
+    "error": {
+      "category": "fill",
+      "value": "rgba(255, 0, 0, 1)",
+      "type": "color"
+    },
+    "warning": {
+      "category": "fill",
+      "value": "rgba(255, 153, 0, 1)",
+      "type": "color"
+    },
+    "success": {
+      "category": "fill",
+      "value": "rgba(105, 241, 135, 1)",
+      "type": "color"
+    }
+  },
+  "headline-1": {
     "category": "font",
     "fontSize": { "value": 36, "type": "number", "unit": "pixel" },
     "textDecoration": { "value": "none", "type": "string" },
@@ -292,7 +309,7 @@
     "paragraphSpacing": { "value": 0, "type": "number", "unit": "pixel" },
     "textCase": { "value": "none", "type": "string" }
   },
-  "headline 2": {
+  "headline-2": {
     "category": "font",
     "fontSize": { "value": 24, "type": "number", "unit": "pixel" },
     "textDecoration": { "value": "none", "type": "string" },
@@ -307,7 +324,7 @@
     "paragraphSpacing": { "value": 0, "type": "number", "unit": "pixel" },
     "textCase": { "value": "none", "type": "string" }
   },
-  "headline 3": {
+  "headline-3": {
     "category": "font",
     "fontSize": { "value": 22, "type": "number", "unit": "pixel" },
     "textDecoration": { "value": "none", "type": "string" },
@@ -322,7 +339,7 @@
     "paragraphSpacing": { "value": 0, "type": "number", "unit": "pixel" },
     "textCase": { "value": "none", "type": "string" }
   },
-  "headline 4": {
+  "headline-4": {
     "category": "font",
     "fontSize": { "value": 18, "type": "number", "unit": "pixel" },
     "textDecoration": { "value": "none", "type": "string" },
@@ -337,7 +354,7 @@
     "paragraphSpacing": { "value": 0, "type": "number", "unit": "pixel" },
     "textCase": { "value": "none", "type": "string" }
   },
-  "headline 5": {
+  "headline-5": {
     "category": "font",
     "fontSize": { "value": 16, "type": "number", "unit": "pixel" },
     "textDecoration": { "value": "none", "type": "string" },
@@ -352,7 +369,7 @@
     "paragraphSpacing": { "value": 0, "type": "number", "unit": "pixel" },
     "textCase": { "value": "none", "type": "string" }
   },
-  "headline 6": {
+  "headline-6": {
     "category": "font",
     "fontSize": { "value": 14, "type": "number", "unit": "pixel" },
     "textDecoration": { "value": "none", "type": "string" },
@@ -367,7 +384,7 @@
     "paragraphSpacing": { "value": 0, "type": "number", "unit": "pixel" },
     "textCase": { "value": "none", "type": "string" }
   },
-  "paragraph 1": {
+  "paragraph-1": {
     "category": "font",
     "fontSize": { "value": 18, "type": "number", "unit": "pixel" },
     "textDecoration": { "value": "none", "type": "string" },
@@ -382,7 +399,7 @@
     "paragraphSpacing": { "value": 0, "type": "number", "unit": "pixel" },
     "textCase": { "value": "none", "type": "string" }
   },
-  "paragraph 2": {
+  "paragraph-2": {
     "category": "font",
     "fontSize": { "value": 16, "type": "number", "unit": "pixel" },
     "textDecoration": { "value": "none", "type": "string" },
@@ -397,7 +414,7 @@
     "paragraphSpacing": { "value": 0, "type": "number", "unit": "pixel" },
     "textCase": { "value": "none", "type": "string" }
   },
-  "paragraph 3": {
+  "paragraph-3": {
     "category": "font",
     "fontSize": { "value": 14, "type": "number", "unit": "pixel" },
     "textDecoration": { "value": "none", "type": "string" },

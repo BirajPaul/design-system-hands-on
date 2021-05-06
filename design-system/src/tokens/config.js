@@ -21,7 +21,6 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerFilter({
   name: "isTypography",
   matcher: function (prop) {
-    console.log(prop)
     return (
       [
         'fontSize',
