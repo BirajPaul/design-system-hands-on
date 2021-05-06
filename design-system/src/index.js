@@ -14,3 +14,4 @@ export { default as Carousel } from "./components/Carousel";
 export { default as Icon } from "./components/Icon";
 export { default as Select } from "./components/Select";
 export { default as SummaryTable } from "./components/SummaryTable";
+export { default as TopBar } from "./components/TopBar";
